@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="23" failures="0" errors="0" time="2.359">
+  <testsuite name="src/tests/ProductList.test.js" errors="0" failures="0" skipped="0" timestamp="2022-12-01T12:31:24" time="0.72" tests="5">
+    <testcase classname="ProductList component" name="should display all product data when all columns are visible" time="0.03">
+    </testcase>
+    <testcase classname="ProductList component" name="should display only chosen columns for a given product (scenario: COLUMNS-ALL, product: Beef - Tongue, Fresh)" time="0.013">
+    </testcase>
+    <testcase classname="ProductList component" name="should display only chosen columns for a given product (scenario: COLUMNS-ALL-BUT-ID, product: Beef - Tongue, Fresh)" time="0.009">
+    </testcase>
+    <testcase classname="ProductList component" name="should display only chosen columns for a given product (scenario: COLUMNS-ONLY-ID, product: Beef - Tongue, Fresh)" time="0.007">
+    </testcase>
+    <testcase classname="ProductList component" name="should display only chosen columns for a given product (scenario: COLUMNS-NONE, product: Beef - Tongue, Fresh)" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/tests/FilterForm.test.js" errors="0" failures="0" skipped="0" timestamp="2022-12-01T12:31:24" time="0.722" tests="4">
+    <testcase classname="FilterForm component" name="should invoke the onPriceInputChange callback after &quot;price from&quot; input value changed" time="0.039">
+    </testcase>
+    <testcase classname="FilterForm component" name="should invoke the onPriceInputChange callback after &quot;price to&quot; input value changed" time="0.01">
+    </testcase>
+    <testcase classname="FilterForm component" name="should display the &quot;price from&quot; in input according to passed props" time="0.008">
+    </testcase>
+    <testcase classname="FilterForm component" name="should display the &quot;price to&quot; in input according to passed props" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/tests/ToggleColumns.test.js" errors="0" failures="0" skipped="0" timestamp="2022-12-01T12:31:24" time="0.83" tests="2">
+    <testcase classname="verify_pack.ToggleColumn" name="should invoke the onCheckboxClick callback after &quot;name&quot; checkbox was clicked" time="0.049">
+    </testcase>
+    <testcase classname="verify_pack.ToggleColumn" name="should display (un)checked column checkboxes after initial render" time="0.126">
+    </testcase>
+  </testsuite>
+  <testsuite name="src/tests/Search.test.js" errors="0" failures="0" skipped="0" timestamp="2022-12-01T12:31:24" time="1.585" tests="12">
+    <testcase classname="Search component" name="should display label including number of items" time="0.078">
+    </testcase>
+    <testcase classname="Search component" name="should display product row cells" time="0.032">
+    </testcase>
+    <testcase classname="Search component" name="should display all columns by default" time="0.031">
+    </testcase>
+    <testcase classname="Search component" name="should display 2 products after filtering price between 10 and 100 (correct)" time="0.044">
+    </testcase>
+    <testcase classname="Search component" name="should display 6 products after filtering price between 100 and 1000 (correct)" time="0.042">
+    </testcase>
+    <testcase classname="Search component" name="should display 0 products after filtering price between 100 and 100 (correct)" time="0.034">
+    </testcase>
+    <testcase classname="Search component" name="should display 1 products after filtering price between 3 and 3 (correct)" time="0.033">
+    </testcase>
+    <testcase classname="Search component" name="should display 3 products after filtering price between 0 and 2 (correct (partial filter))" time="0.033">
+    </testcase>
+    <testcase classname="Search component" name="should display 2 products after filtering price between 900 and 0 (correct (partial filter))" time="0.033">
+    </testcase>
+    <testcase classname="Search component" name="should display 30 products after filtering price between 0 and 0 (correct (partial filter))" time="0.027">
+    </testcase>
+    <testcase classname="Search component" name="should display 0 products after filtering price between 1000 and 100 (incorrect (from &gt; to))" time="0.031">
+    </testcase>
+    <testcase classname="Search component" name="should display 0 products after filtering price between 0 and 0 (incorrect (price=0))" time="0.029">
+    </testcase>
+  </testsuite>
+</testsuites>
